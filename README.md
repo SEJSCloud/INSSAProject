@@ -38,11 +38,11 @@ Elastic Search
 * Additional technical set : Axios
 ```
 
-# How to run it
-1. Eclipse에서 Spring boot 파일을 가동한다.
-2. 오라클 DB, 엘라스틱 서치, 키바나를 켠 상태로, html 파일을 실행하여 인스타그램 데이터 크롤링을 수행한다. 
-3. html 파일을 실행하여 지도 정보를 가져온다.
-4. 
+# Process of the project
+1. Heart it 에서 팔로우 하고있는 인플루언서들의 정보와 방문지역을 Selenium을 통해 크롤링한다. 
+2. 크롤링된 데이터는 장소키워드, 인물정보로 나뉘어 각각 Oracle, ElasticSearch에 저장된다.
+3. 수집된 장소키워드와 Kakao Map API를 이용, 인플루언서가 방문한 지역의 지도 정보를 가져온다. 
+4. 생성된 지도 정보를 이용하여 Kakao Map API로 지도를 출력하고 각 장소의 Kakao Place와 연결한다. 
 
 # Authors
 * **강민웅**:  [강민웅의 깃헙](https://github.com/happymwkang)
